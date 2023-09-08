@@ -1,15 +1,5 @@
 const inquirer = require('inquirer');
 
-const employeeQuestions {
-    viewDepartments,
-    viewRoles,
-    viewEmployees,
-    addDepartment,
-    addRole,
-    addEmployee,
-    updateEmployeeRole,
-};
-
 async function userQuestions() {
     const choices = [
         "View All Departments",
