@@ -33,22 +33,22 @@ async function handleUserChoice(choice) {
         case 'View All Departments':
             viewDepartments();
             break;
-        case 'View all roles':
+        case 'View All Roles':
             viewRoles();
             break;
-        case 'View all employees':
+        case 'View All Employees':
             viewEmployees();
             break;
-        case 'Add a department':
+        case 'Add A Department':
             addDepartment();
             break;
-        case 'Add a role':
+        case 'Add A Role':
             addRole();
             break;
-        case 'Add an employee':
+        case 'Add An Employee':
             addEmployee();
             break;
-        case 'Update an employee role':
+        case 'Update An Employee Role':
             updateEmployeeRole();
             break;
         case 'Exit':
@@ -71,6 +71,16 @@ function viewDepartments() {
 }
 
 function viewRoles() {
+    const query = "SELECT * FROM roles";
+    db.query(query, (err, res) => {
+        if (err) {
+            console.log(err);
+        }
+        console.table(res);
+        setTimeout(userQuestions, 3000)
+    });
+}
+function view() {
     const query = "SELECT * FROM roles";
     db.query(query, (err, res) => {
         if (err) {
