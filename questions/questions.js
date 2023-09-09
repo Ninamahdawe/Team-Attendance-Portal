@@ -80,24 +80,5 @@ function viewRoles() {
         setTimeout(userQuestions, 3000)
     });
 }
-async function addDepartment() {
-    const departmentData = await inquirer.prompt([
-        {
-            type: "input",
-            name: "name",
-            message: "Enter the department name please! ",
-        },
-    ]);
-    const query = "INSERT INTO departments SET ?";
-    db.query(query, departmentData, (err, res) => {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log(`Department ${departmentData.name} added successfully!`);
-        }
-        setTimeout(userQuestions, 3000);
-    });
-}
-
 
 module.exports = userQuestions;
