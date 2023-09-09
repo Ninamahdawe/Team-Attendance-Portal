@@ -7,8 +7,8 @@ async function userQuestions() {
         "View All Roles",
         "View All Employees",
         "Add Department",
-        "Add Employee",
         "Add Role",
+        "Add Employee",
         "Update Employee Role",
         "Exit",
     ];
@@ -42,7 +42,7 @@ async function handleUserChoice(choice) {
         case 'Add Department':
             addDepartment();
             break;
-        case 'Add A Role':
+        case 'Add Role':
             addRole();
             break;
         case 'Add An Employee':
@@ -114,7 +114,7 @@ async function addDepartment() {
 }
 
 async function addRole() {
-    const departmentData = await inquirer.prompt([
+    const roleData = await inquirer.prompt([
         {
             type: "input",
             name: "name",
@@ -134,12 +134,12 @@ async function addRole() {
 
 
     const query = "INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?)";
-    const values = [departmentData.name];
+    const values = [roleData.name, roleData.salary, roleData.department_id];
     db.query(query, values, (err, res) => {
         if (err) {
             console.log(err);
         } else {
-            console.log(`Department ${departmentData.name} added successfully!`);
+            console.log(`Role ${roleData.name} added successfully!`);
         }
         setTimeout(userQuestions, 3000);
     });
