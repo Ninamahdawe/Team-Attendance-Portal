@@ -88,6 +88,16 @@ async function addDepartment() {
             message: "Enter the department name please! ",
         },
     ]);
+    const query = "INSERT INTO departments SET ?";
+    db.query(query, departmentData, (err, res) => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(`Department ${departmentData.name} added successfully!`);
+        }
+        setTimeout(userQuestions, 3000);
+    });
+}
 
 
-    module.exports = userQuestions;
+module.exports = userQuestions;
