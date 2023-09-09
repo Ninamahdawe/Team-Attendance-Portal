@@ -45,7 +45,7 @@ async function handleUserChoice(choice) {
         case 'Add Role':
             addRole();
             break;
-        case 'Add An Employee':
+        case 'Add  Employee':
             addEmployee();
             break;
         case 'Update An Employee Role':
@@ -118,6 +118,37 @@ async function addRole() {
         {
             type: "input",
             name: "name",
+            message: "Please enter the role you Would like to add! ",
+        },
+        {
+            type: "input",
+            name: "salary",
+            message: "Please enter the salary you would like to add?",
+        },
+        {
+            type: "input",
+            name: "department_id",
+            message: "What is the department ID of the role you would like to add?",
+        },
+    ])
+
+
+    const query = "INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?)";
+    const values = [roleData.name, roleData.salary, roleData.department_id];
+    db.query(query, values, (err, res) => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(`Role ${roleData.name} added successfully!`);
+        }
+        setTimeout(userQuestions, 3000);
+    });
+}
+async function addEmployee() {
+    const employeeData = await inquirer.prompt([
+        {
+            type: "input",
+            name: "name",
             message: "Please tnter the role you Would like to add! ",
         },
         {
@@ -144,4 +175,5 @@ async function addRole() {
         setTimeout(userQuestions, 3000);
     });
 }
+
 module.exports = userQuestions;
