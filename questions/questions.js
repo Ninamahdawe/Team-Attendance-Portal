@@ -80,7 +80,7 @@ function viewRoles() {
         setTimeout(userQuestions, 3000)
     });
 }
-function view() {
+function viewEmployees() {
     const query = "SELECT * FROM roles";
     db.query(query, (err, res) => {
         if (err) {
