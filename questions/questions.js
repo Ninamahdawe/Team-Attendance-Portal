@@ -148,12 +148,12 @@ async function addEmployee() {
     const employeeData = await inquirer.prompt([
         {
             type: "input",
-            name: "name",
-            message: "Please tnter the role you Would like to add! ",
+            name: "first_name",
+            message: "Please enter the name of the employee you Would like to add! ",
         },
         {
             type: "input",
-            name: "salary",
+            name: "last_name",
             message: "Please enter the salary you would like to add?",
         },
         {
