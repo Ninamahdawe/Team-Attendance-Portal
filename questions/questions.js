@@ -95,12 +95,15 @@ async function addDepartment() {
         {
             type: "input",
             name: "name",
-            message: "Enter the department name you're looking for! ",
+            message: "Please Enter The department name! ",
+
+
         },
     ]);
 
-    const query = "INSERT INTO departments ?";
-    db.query(query, (err, res) => {
+    const query = "INSERT INTO departments (name)  VALUES (?)";
+    const values = [departmentData.name];
+    db.query(query, values, (err, res) => {
         if (err) {
             console.log(err);
         } else {
@@ -110,4 +113,35 @@ async function addDepartment() {
     });
 }
 
+async function addRole() {
+    const departmentData = await inquirer.prompt([
+        {
+            type: "input",
+            name: "name",
+            message: "Please tnter the role you Would like to add! ",
+        },
+        {
+            type: "input",
+            name: "salary",
+            message: "Please enter the salary you would like to add?",
+        },
+        {
+            type: "input",
+            name: "department_id",
+            message: "What is the department ID of the role you would like to add?",
+        },
+    ])
+
+
+    const query = "INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?)";
+    const values = [departmentData.name];
+    db.query(query, values, (err, res) => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(`Department ${departmentData.name} added successfully!`);
+        }
+        setTimeout(userQuestions, 3000);
+    });
+}
 module.exports = userQuestions;
