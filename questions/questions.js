@@ -100,7 +100,7 @@ async function addDepartment() {
     ]);
 
     const query = "INSERT INTO departments ?";
-    db.query(query, departmentData, (err, res) => {
+    db.query(query, (err, res) => {
         if (err) {
             console.log(err);
         } else {
