@@ -81,7 +81,7 @@ function viewRoles() {
     });
 }
 function viewEmployees() {
-    const query = "SELECT * FROM roles";
+    const query = "SELECT * FROM employees";
     db.query(query, (err, res) => {
         if (err) {
             console.log(err);
