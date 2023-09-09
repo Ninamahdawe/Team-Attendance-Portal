@@ -80,5 +80,14 @@ function viewRoles() {
         setTimeout(userQuestions, 3000)
     });
 }
+async function addDepartment() {
+    const departmentData = await inquirer.prompt([
+        {
+            type: "input",
+            name: "name",
+            message: "Enter the department name please! ",
+        },
+    ]);
 
-module.exports = userQuestions;
+
+    module.exports = userQuestions;
