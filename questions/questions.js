@@ -45,7 +45,7 @@ async function handleUserChoice(choice) {
         case 'Add Role':
             addRole();
             break;
-        case 'Add  Employee':
+        case 'Add Employee':
             addEmployee();
             break;
         case 'Update An Employee Role':
@@ -144,33 +144,39 @@ async function addRole() {
         setTimeout(userQuestions, 3000);
     });
 }
+
 async function addEmployee() {
     const employeeData = await inquirer.prompt([
         {
             type: "input",
             name: "first_name",
-            message: "Please enter the name of the employee you Would like to add! ",
+            message: "Please enter the first name of the employee you Would like to add! ",
         },
         {
             type: "input",
             name: "last_name",
-            message: "Please enter the salary you would like to add?",
+            message: "Please enter the last name of the employee you would like to add?",
         },
         {
             type: "input",
-            name: "department_id",
-            message: "What is the department ID of the role you would like to add?",
+            name: "role_id",
+            message: "Please enter the department ID of the role you would like to add?",
+        },
+        {
+            type: "input",
+            name: "manager_id",
+            message: "Please enter the manager ID of the employee you would like to add?",
         },
     ])
 
 
-    const query = "INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?)";
-    const values = [roleData.name, roleData.salary, roleData.department_id];
+    const query = "INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)";
+    const values = [employeeData.first_name, employeeData.last_name, employeeData.role_id, employeeData.manager_id];
     db.query(query, values, (err, res) => {
         if (err) {
             console.log(err);
         } else {
-            console.log(`Role ${roleData.name} added successfully!`);
+            console.log(`Employee ${employeeData.first_name$}${employeeData.last_name} added successfully!`);
         }
         setTimeout(userQuestions, 3000);
     });
