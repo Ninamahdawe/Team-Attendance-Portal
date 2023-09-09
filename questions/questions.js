@@ -6,9 +6,9 @@ async function userQuestions() {
         "View All Departments",
         "View All Roles",
         "View All Employees",
+        "Add Department",
         "Add Employee",
         "Add Role",
-        "Add Department",
         "Update Employee Role",
         "Exit",
     ];
@@ -39,7 +39,7 @@ async function handleUserChoice(choice) {
         case 'View All Employees':
             viewEmployees();
             break;
-        case 'Add A Department':
+        case 'Add Department':
             addDepartment();
             break;
         case 'Add A Role':
@@ -95,7 +95,7 @@ async function addDepartment() {
         {
             type: "input",
             name: "name",
-            message: "Enter the department name: ",
+            message: "Enter the department name you're looking for! ",
         },
     ]);
 
