@@ -217,9 +217,9 @@ async function updateEmployeeManager() {
             message: "What is the ID of the employee you would like to update?:",
         },
         {
-            type: "list",
+            type: "input",
             name: "manager_id",
-            message: "Select the new manager for the employee:",
+            message: "What is the new manager ID of the employee you would like to update:",
         },
     ]);
     const query = "UPDATE employees SET manager_id = ? WHERE id = ?";
