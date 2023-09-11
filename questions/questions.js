@@ -10,6 +10,7 @@ async function userQuestions() {
         "Add Role",
         "Add Employee",
         "Update Employee Role",
+        'Update Employee Manager',
         "Exit",
     ];
 
@@ -50,6 +51,9 @@ async function handleUserChoice(choice) {
             break;
         case 'Update Employee Role':
             updateEmployeeRole();
+            break;
+        case 'Update Employee Manager':
+            updateEmployeeManager();
             break;
         case 'Exit':
             console.log('Goodbye SeeYaa!');
@@ -216,7 +220,6 @@ async function updateEmployeeManager() {
             type: "list",
             name: "manager_id",
             message: "Select the new manager for the employee:",
-            choices: ["Manager 1", "Manager 2", "Manager 3"], // Replace with actual manager choices
         },
     ]);
     const query = "UPDATE employees SET manager_id = ? WHERE id = ?";
