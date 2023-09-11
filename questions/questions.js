@@ -132,7 +132,6 @@ async function addRole() {
         },
     ])
 
-
     const query = "INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?)";
     const values = [roleData.name, roleData.salary, roleData.department_id];
     db.query(query, values, (err, res) => {
