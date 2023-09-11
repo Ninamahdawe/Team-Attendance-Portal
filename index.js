@@ -10,7 +10,7 @@ const figletAsync = util.promisify(figlet);
 async function generateHeader() {
     try {
         const header = await figletAsync("Team Portal", { font: "big" });
-        return header;
+        return chalk.blue(header);
     } catch (err) {
         console.log("Error:", err); // Log any errors
         return null;
