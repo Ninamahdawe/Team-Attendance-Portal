@@ -18,6 +18,11 @@ async function generateHeader() {
 async function init() {
     const header = await generateHeader();
     console.log(header);
+    console.log('Welcome To the Team Portal!');
+    userQuestions();
+}
+
+init();
 
     // First when our app starts we will display a welcome message.
     // Next we will ask them to choose an operation
