@@ -1,6 +1,7 @@
 const inqurer = require("inquirer");
 const userQuestions = require("./questions/questions")
 const figlet = require("figlet");
+const util = require("util");
 const figletAsync = util.promisify(figlet);
 async function generateHeader() {
     try {
