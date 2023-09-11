@@ -1,6 +1,7 @@
 const inqurer = require("inquirer");
 const userQuestions = require("./questions/questions")
 const figlet = require("figlet");
+const figletAsync = util.promisify(figlet);
 
 // First when our app starts we will display a welcome message.
 // Next we will ask them to choose an operation
