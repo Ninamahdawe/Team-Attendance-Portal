@@ -33,6 +33,8 @@ async function init() {
 
     // Log a welcome message to the console.
     console.log('Welcome To the Team Portal!');
+
+    // Call the 'userQuestions()' function to start the user interaction.
     userQuestions();
 }
 
