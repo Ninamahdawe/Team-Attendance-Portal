@@ -3,6 +3,7 @@ const userQuestions = require("./questions/questions")
 const figlet = require("figlet");
 const util = require("util");
 const figletAsync = util.promisify(figlet);
+require("console.table");
 async function generateHeader() {
     try {
         const header = await figletAsync("Team Portal");
