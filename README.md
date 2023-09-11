@@ -59,7 +59,7 @@ This project is licensed under the [Apache License 2.0](LICENSE).
 
 Version 2.0, January 2004
 
-### Contact Me
+## Github
 
 If you encounter any issues with this repo, please report them on the project's GitHub repository.
 
