@@ -34,7 +34,7 @@ async function userQuestions() {
     handleUserChoice(choice)
 
 }
-
+// Use a switch statement to determine which action to perform based on the user's choice.
 async function handleUserChoice(choice) {
     console.log(choice)
     switch (choice) {
@@ -70,6 +70,7 @@ async function handleUserChoice(choice) {
     }
 }
 
+// Define a function 'viewDepartments()' to query and display all departments from the database.
 function viewDepartments() {
     const query = "SELECT * FROM departments";
     db.query(query, (err, res) => {
