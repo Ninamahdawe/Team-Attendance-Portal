@@ -64,3 +64,7 @@ Version 2.0, January 2004
 If you encounter any issues with this repo, please report them on the project's GitHub repository.
 
 https://github.com/Ninamahdawe
+
+### Walk Through Video
+
+https://drive.google.com/file/d/1ctbfkN7K7PPgkKy0vyafdUODhIv0so6o/view
