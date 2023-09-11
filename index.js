@@ -17,12 +17,16 @@ async function generateHeader() {
     try {
         // Generate the header text using 'figletAsync' with the font 'big'.
         const header = await figletAsync("Team Portal", { font: "big" });
+
+        // Return the generated header.
         return header;
     } catch (err) {
+        // If there is an error, log it to the console.
         console.log("Error:", err); // Log any errors
         return null;
     }
 }
+// Define an async function 'init()' to initialize the application.
 async function init() {
     const header = await generateHeader();
     console.log(header);
