@@ -181,5 +181,22 @@ async function addEmployee() {
         setTimeout(userQuestions, 3000);
     });
 }
+async function updateEmployeeRole() {
+    const employeeData = await inquirer.prompt([
+        {
+            type: "input",
+            name: "employee_id",
+            message: "Please enter the ID of the employee you want to update:",
+        },
+        {
+            type: "input",
+            name: "new_role_id",
+            message: "Please enter the new role ID for the employee:",
+        },
+    ]);
 
-module.exports = userQuestions;
+
+
+
+
+    module.exports = userQuestions;
