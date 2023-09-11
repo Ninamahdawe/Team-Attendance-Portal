@@ -57,3 +57,9 @@ This project is licensed under the [Apache License 2.0](LICENSE).
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Version 2.0, January 2004
+
+### Contact Me
+
+If you encounter any issues with this repo, please report them on the project's GitHub repository.
+
+git@github.com:Ninamahdawe/Team-Attendance-Portal.git
