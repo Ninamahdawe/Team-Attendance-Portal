@@ -38,6 +38,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1. Clone the repository to your local machine:
    ,,, shell
+
    git clone git@github.com:Ninamahdawe/Team-Attendance-Portal.git
 
 - cd Team-Attendance-Portal
@@ -62,4 +63,4 @@ Version 2.0, January 2004
 
 If you encounter any issues with this repo, please report them on the project's GitHub repository.
 
-git@github.com:Ninamahdawe/Team-Attendance-Portal.git
+(git@github.com:Ninamahdawe/Team-Attendance-Portal.git)
