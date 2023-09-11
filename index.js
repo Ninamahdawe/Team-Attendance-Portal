@@ -4,7 +4,7 @@ const figlet = require("figlet");
 const util = require('util');
 const figletAsync = util.promisify(figlet);
 
-require("console.table");
+// require("console.table");
 
 async function generateHeader() {
     try {
@@ -15,6 +15,7 @@ async function generateHeader() {
         return null;
     }
 }
+
 // First when our app starts we will display a welcome message.
 // Next we will ask them to choose an operation
 // with their choice we will call handUserChoice and pass the choice
