@@ -10,3 +10,7 @@ The Team Attendance Portal is a command-line application for managing informatio
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+
+## Features
+
+The Team Attendance Portal offers the following features:
