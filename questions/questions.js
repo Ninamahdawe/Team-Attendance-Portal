@@ -205,9 +205,18 @@ async function updateEmployeeRole() {
         setTimeout(userQuestions, 3000);
     });
 }
+async function updateEmployeeManager() {
+    const employees = await inquirer.prompt([
+        {
+            type: "list",
+            name: "employee_id",
+            message: "Please Select the employee you want to update:",
+            choices: ["Employee 1", "Employee 2", "Employee 3"],
+        },
 
 
 
 
 
-module.exports = userQuestions;
+
+        module.exports = userQuestions;
