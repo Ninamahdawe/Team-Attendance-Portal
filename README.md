@@ -28,3 +28,8 @@ The Team Attendance Portal offers the following features:
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine.
+
+### Prerequisites
+
+- Node.js and npm (Node Package Manager) installed on your machine.
+- MySQL database server.
