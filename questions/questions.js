@@ -228,6 +228,8 @@ async function updateEmployeeRole() {
     });
 }
 
+
+// Define an async function 'updateEmployeeManager()' to prompt the user for employee ID and new manager ID and update the employee's manager.
 async function updateEmployeeManager() {
     const employees = await inquirer.prompt([
         {
