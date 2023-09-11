@@ -37,7 +37,7 @@ async function init() {
     // Call the 'userQuestions()' function to start the user interaction.
     userQuestions();
 }
-
+// Call the 'init()' function to initialize the application.
 init();
 
     // First when our app starts we will display a welcome message.
