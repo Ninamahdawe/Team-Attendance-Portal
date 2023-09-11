@@ -1,13 +1,21 @@
+// Import the 'inquirer' library for handling user input.
 const inqurer = require("inquirer");
+// Import the 'userQuestions' module from './questions/questions'.
 const userQuestions = require("./questions/questions")
+
+// Import the 'figlet' library for creating ASCII art text.
 const figlet = require("figlet");
+
+// Import the 'util' module for utility functions.
 const util = require('util');
 const figletAsync = util.promisify(figlet);
 
 // require("console.table");
 
+// Define an async function 'generateHeader()' to create an ASCII art header.
 async function generateHeader() {
     try {
+        // Generate the header text using 'figletAsync' with the font 'big'.
         const header = await figletAsync("Team Portal", { font: "big" });
         return header;
     } catch (err) {
