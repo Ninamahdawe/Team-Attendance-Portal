@@ -24,3 +24,7 @@ The Team Attendance Portal offers the following features:
 - Update an employee's role.
 - Update an employee's manager.
 - Graceful exit from the application.
+
+## Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine.
