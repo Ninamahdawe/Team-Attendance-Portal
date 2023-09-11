@@ -49,3 +49,11 @@ To run the Team Attendance Portal, execute the following command:
 npm start
 
 This will start the command-line application and display a menu of options for interacting with the team data.
+
+## License
+
+This project is licensed under the [Apache License 2.0](LICENSE).
+
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
