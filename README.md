@@ -47,3 +47,5 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 To run the Team Attendance Portal, execute the following command:
 npm start
+
+This will start the command-line application and display a menu of options for interacting with the team data.
