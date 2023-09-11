@@ -63,4 +63,4 @@ Version 2.0, January 2004
 
 If you encounter any issues with this repo, please report them on the project's GitHub repository.
 
-(git@github.com:Ninamahdawe/Team-Attendance-Portal.git)
+https://github.com/Ninamahdawe
