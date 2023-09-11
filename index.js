@@ -4,7 +4,7 @@ const figlet = require("figlet");
 const figletAsync = util.promisify(figlet);
 async function generateHeader() {
     try {
-        const header = await figletAsync
+        const header = await figletAsync("Team Portal");
         // First when our app starts we will display a welcome message.
         // Next we will ask them to choose an operation
         // with their choice we will call handUserChoice and pass the choice
