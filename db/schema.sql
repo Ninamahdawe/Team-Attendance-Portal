@@ -1,6 +1,12 @@
+-- Drop the 'teams_db' database if it exists
+
 DROP DATABASE IF EXISTS teams_db;
 
+-- Create a new 'teams_db' database
+
 CREATE DATABASE teams_db;
+
+-- Use the 'teams_db' database for subsequent queries
 
 USE teams_db;
 
