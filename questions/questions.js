@@ -81,7 +81,7 @@ function viewDepartments() {
         setTimeout(userQuestions, 3000)
     });
 }
-
+// Define a function 'viewRoles()' to query and display all roles from the database.
 function viewRoles() {
     const query = "SELECT * FROM roles";
     db.query(query, (err, res) => {
@@ -92,6 +92,8 @@ function viewRoles() {
         setTimeout(userQuestions, 3000)
     });
 }
+
+// Define a function 'viewEmployees()' to query and display all employees from the database.
 function viewEmployees() {
     const query = "SELECT * FROM employees";
     db.query(query, (err, res) => {
@@ -102,6 +104,8 @@ function viewEmployees() {
         setTimeout(userQuestions, 3000)
     });
 }
+
+// Define an async function 'addDepartment()' to prompt the user for department details and insert them into the database.
 async function addDepartment() {
     const departmentData = await inquirer.prompt([
         {
