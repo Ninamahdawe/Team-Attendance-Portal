@@ -162,6 +162,8 @@ async function addRole() {
     });
 }
 
+
+// Define an async function 'addEmployee()' to prompt the user for employee details and insert them into the database.
 async function addEmployee() {
     const employeeData = await inquirer.prompt([
         {
@@ -223,6 +225,7 @@ async function updateEmployeeRole() {
         setTimeout(userQuestions, 3000);
     });
 }
+
 async function updateEmployeeManager() {
     const employees = await inquirer.prompt([
         {
