@@ -42,3 +42,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 - cd Team-Attendance-Portal
 - npm install
+
+### Usage
+
+To run the Team Attendance Portal, execute the following command:
+npm start
