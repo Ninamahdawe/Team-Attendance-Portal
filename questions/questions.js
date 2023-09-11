@@ -219,10 +219,22 @@ async function updateEmployeeManager() {
             choices: ["Manager 1", "Manager 2", "Manager 3"], // Replace with actual manager choices
         },
     ]);
+    const query = "UPDATE employees SET manager_id = ? WHERE id = ?";
+    const values = [employees.manager_id, employees.employee_id];
+
+    db.query(query, values, (err, res) => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("Employee manager updated successfully!");
+        }
+        setTimeout(userQuestions, 3000);
+    });
+}
 
 
 
 
 
 
-    module.exports = userQuestions;
+module.exports = userQuestions;
