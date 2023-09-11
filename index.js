@@ -26,9 +26,9 @@ async function init() {
     // then the opperation will be executed ( may reqire more prompting )
     // after they results of the operation are completed you will return them to the menu that ask for their selected operation
 
-    function init() {
-        console.log("Welcome To the Team Portal!");
-        userQuestions()
+    // function init() {
+    //     console.log("Welcome To the Team Portal!");
+    //     userQuestions()
 
-    }
-    init()
+    // }
+    // init()
