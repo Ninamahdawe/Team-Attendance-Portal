@@ -1,9 +1,15 @@
+-- Insert departments into the 'departments' table
+
 INSERT INTO departments (name)
 VALUES ("Accounting"), ("Legal"), ("Management"), ("Engineering"), ("Human Resources");
+
+-- Insert roles into the 'roles' table
 
 INSERT INTO
     roles (title, salary, department_id)
 VALUES ("Solutions Engineer", 11000, 3), ("Software Engineer", 11.662, 3), ("Staff Accountant", 6500, 2), ("Sales Engineer", 8000, 3);
+
+-- Insert employees into the 'employees' table
 
 INSERT INTO
     employees (
