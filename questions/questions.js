@@ -200,6 +200,8 @@ async function addEmployee() {
         setTimeout(userQuestions, 3000);
     });
 }
+
+// Define an async function 'updateEmployeeRole()' to prompt the user for employee ID and new role ID and update the employee's role.
 async function updateEmployeeRole() {
     const employeeData = await inquirer.prompt([
         {
