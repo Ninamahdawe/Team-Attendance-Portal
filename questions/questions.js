@@ -48,7 +48,7 @@ async function handleUserChoice(choice) {
         case 'Add Employee':
             addEmployee();
             break;
-        case 'Update An Employee Role':
+        case 'Update Employee Role':
             updateEmployeeRole();
             break;
         case 'Exit':
@@ -186,7 +186,7 @@ async function updateEmployeeRole() {
         {
             type: "input",
             name: "employee_id",
-            message: "Please enter the ID of the employee you want to update:",
+            message: "Please enter the ID of the employee you would like to update:",
         },
         {
             type: "input",
@@ -194,9 +194,21 @@ async function updateEmployeeRole() {
             message: "Please enter the new role ID for the employee:",
         },
     ]);
+    const query = "UPDATE employees SET role_id = ? WHERE id = ?";
+    const values = [employeeData.new_role_id, employeeData.employee_id];
+
+    db.query(query, values, (err, res) => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(`Employee with ID ${employeeData.employee_id} has been assigned a new role with ID ${employeeData.new_role_id}.`);
+        }
+        setTimeout(userQuestions, 3000);
+    });
+}
 
 
 
 
 
-    module.exports = userQuestions;
+module.exports = userQuestions;
