@@ -30,6 +30,8 @@ async function generateHeader() {
 async function init() {
     const header = await generateHeader();
     console.log(header);
+
+    // Log a welcome message to the console.
     console.log('Welcome To the Team Portal!');
     userQuestions();
 }
