@@ -2,7 +2,6 @@ const inqurer = require("inquirer");
 const userQuestions = require("./questions/questions")
 const figlet = require("figlet");
 const util = require('util');
-const chalk = require('chalk');
 const figletAsync = util.promisify(figlet);
 
 // require("console.table");
