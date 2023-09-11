@@ -1,7 +1,10 @@
 const inquirer = require('inquirer');
 // const handleUserChoice = require("../lib/menuemp")
 const db = require("../db/connection.js")
+
+// Define an async function 'userQuestions()' to display a list of choices to the user.
 async function userQuestions() {
+    // Create an array of choices for the user.
     const choices = [
         "View All Departments",
         "View All Roles",
@@ -14,6 +17,7 @@ async function userQuestions() {
         "Exit",
     ];
 
+    // Prompt the user to select a choice from the list.
     const { choice } = await inquirer.prompt([
         {
             type: "list",
@@ -23,7 +27,10 @@ async function userQuestions() {
         },
 
     ]);
+    // Log the user's choice.
     console.log(choice)
+
+    // Call the 'handleUserChoice()' function to handle the user's choice.
     handleUserChoice(choice)
 
 }
