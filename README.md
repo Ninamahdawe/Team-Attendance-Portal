@@ -14,3 +14,8 @@ The Team Attendance Portal is a command-line application for managing informatio
 ## Features
 
 The Team Attendance Portal offers the following features:
+
+- View a list of all departments.
+- View a list of all roles.
+- View a list of all employees.
+- Add a new department.
