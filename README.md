@@ -37,3 +37,5 @@ Follow these instructions to get a copy of the project up and running on your lo
 ### Installation
 
 1. Clone the repository to your local machine:
+   ,,, shell
+   git clone git@github.com:Ninamahdawe/Team-Attendance-Portal.git
