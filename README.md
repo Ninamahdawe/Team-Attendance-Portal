@@ -33,3 +33,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 - Node.js and npm (Node Package Manager) installed on your machine.
 - MySQL database server.
+
+### Installation
+
+1. Clone the repository to your local machine:
