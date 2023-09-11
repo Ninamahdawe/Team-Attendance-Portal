@@ -10,11 +10,15 @@ CREATE DATABASE teams_db;
 
 USE teams_db;
 
+-- Create a 'DEPARTMENTS' table
+
 CREATE TABLE
     DEPARTMENTS(
         id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
         name VARCHAR (30) NOT NULL
     );
+
+-- Create a 'ROLES' table
 
 CREATE TABLE
     ROLES(
@@ -25,6 +29,8 @@ CREATE TABLE
         FOREIGN KEY (department_id) REFERENCES departments(id) ON DELETE
         SET NULL
     );
+
+-- Create an 'EMPLOYEES' table
 
 CREATE TABLE
     EMPLOYEES (
