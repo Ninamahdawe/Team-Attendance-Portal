@@ -129,6 +129,8 @@ async function addDepartment() {
     });
 }
 
+
+// Define an async function 'addRole()' to prompt the user for role details and insert them into the database.
 async function addRole() {
     const roleData = await inquirer.prompt([
         {
