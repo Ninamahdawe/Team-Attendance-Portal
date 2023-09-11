@@ -208,11 +208,11 @@ async function updateEmployeeRole() {
 async function updateEmployeeManager() {
     const employees = await inquirer.prompt([
         {
-            type: "list",
+            type: "input",
             name: "employee_id",
-            message: "Please Select the employee you want to update:",
-            choices: ["Employee 1", "Employee 2", "Employee 3"],
+            message: "What is the ID of the employee you would like to update?:",
         },
+
 
 
 
