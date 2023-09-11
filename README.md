@@ -19,3 +19,8 @@ The Team Attendance Portal offers the following features:
 - View a list of all roles.
 - View a list of all employees.
 - Add a new department.
+- Add a new role.
+- Add a new employee.
+- Update an employee's role.
+- Update an employee's manager.
+- Graceful exit from the application.
