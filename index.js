@@ -6,9 +6,10 @@ console.log(figlet.fontsSync());
 const util = require("util");
 const figletAsync = util.promisify(figlet);
 require("console.table");
+
 async function generateHeader() {
     try {
-        const header = await figletAsync("Team Portal");
+        const header = await figletAsync("Team Portal", { font: "Standard" });
         return header;
     } catch (err) {
         console.log("Error:", err); // Log any errors
