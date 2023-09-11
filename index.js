@@ -1,6 +1,8 @@
 const inqurer = require("inquirer");
 const userQuestions = require("./questions/questions")
 const figlet = require("figlet");
+console.log(figlet.fontsSync());
+
 const util = require("util");
 const figletAsync = util.promisify(figlet);
 require("console.table");
