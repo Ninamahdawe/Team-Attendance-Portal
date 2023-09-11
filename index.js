@@ -9,7 +9,7 @@ require("console.table");
 
 async function generateHeader() {
     try {
-        const header = await figletAsync("Team Portal", { font: "Standard" });
+        const header = await figletAsync("Team Portal", { font: "big" });
         return header;
     } catch (err) {
         console.log("Error:", err); // Log any errors
